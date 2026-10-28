@@ -18,7 +18,14 @@
 @keyframes pop{from{opacity:0;transform:scale(.3)}}
 .sweep{animation:sweep 4.5s cubic-bezier(.6,0,.4,1) infinite}
 @keyframes sweep{0%{transform:translateX(0)}50%{transform:translateX(1104px)}100%{transform:translateX(0)}}
-@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style><defs>
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+g[opacity=".09"]{animation:stripes 1.4s linear infinite}
+@keyframes stripes{to{transform:translateX(22px)}}
+.stamp{transform-box:fill-box;transform-origin:50% 50%}
+
+.ping{transform-box:fill-box;transform-origin:50% 50%;animation:ping 1.8s ease-out infinite}
+@keyframes ping{0%{transform:scale(.8);opacity:1}100%{transform:scale(2);opacity:0}}
+</style><defs>
   <clipPath id="card"><rect width="1280" height="500" rx="18"/></clipPath>
   <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="60"/></filter>
   <filter id="glow" x="-400%" y="-10%" width="900%" height="120%"><feGaussianBlur stdDeviation="5"/></filter>
@@ -39,4 +46,4 @@
   <text x="88" y="448" class="k" fill="#bfae4a">2025-10-26 TO 2026-10-28</text>
   <text x="1192" y="448" text-anchor="end" class="k" fill="#bfae4a">ALMOST ALL OF IT IN PRIVATE REPOSITORIES · COUNTS ONLY</text>
   
-</g></svg>
+</g><circle cx="1183.5" cy="326.3" r="12.7" fill="none" stroke="#ffe14d" stroke-width="3" class="ping"/><circle cx="1183.5" cy="326.3" r="12.7" fill="none" stroke="#ff3b1f" stroke-width="2.5"/><text x="1183.5" y="250" text-anchor="middle" class="k" fill="#ff3b1f">PEAK</text></svg>
